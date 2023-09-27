@@ -1,0 +1,266 @@
+
+A variable is a container to hold data.
+Varibale can be of various types. Primarily we hace these variable types in c++:
+1. Int
+2. Float
+3. Char
+4. Double
+5. Boolean
+
+Based on scope, variable can be classified into two types:
+    1.Local variable
+    2.Global variable
+
+        DATA TYPE define the type of data a varibale can hold, for example an  integer variablecan hold 
+                   integer data, a character type variablecan hold character data etc.
+
+
+         DATA TYPES  in C++ are categorised in three groups:
+            1. Built-in
+            2. User-defined
+            3. Derived
+
+
+   RULES TO DECLARE VARIABLES IN C++
+   1. Varibales names in C++ can tange from 1 to 255 character.
+   2. All variables names must begin with a letter of the aplhabet or an undersocre(_).
+   3. After the first intial letter, variable names can also contain letters and numbers.
+   4. Variables names are case sensitive.
+   5. No spaces or special characters are allowed.
+   6. You cannot use a C++ keyword( a reserved word) as a variable name.
+   
+   FULL FORM OF IOSTREAM-> input output stream
+   In C++ sequence of bytes corresponding to input and output are commonly known as STREAMS.
+   
+
+C++ CONTROL STRUCTURES
+ There are three types of control structure:
+    1. sequence structure
+    2. Selection structure
+    3. Loop structure
+        These are basic control structure
+
+            
+ ARRAYS
+
+    * An array is a collection of items of similar type stored in contigous memory locations.
+    * Sometimes, a simple variable is not enough to hold all the data. 
+               
+
+
+                     OBJECT ORIENTED PROGRAMMING IN C++
+
+   WHY OOPS?
+   1. C++ language was designed with the main intention of adding object-oriennted features
+      to C language.
+   2. As the size of the program increases, readability, maintainabillity and bug-gree nature 
+      of programs decreases.
+   3. This was the major problem with languages like C which relied upon functions or
+      procedures( hence the name procedural programming language)
+   4. As a result, the possibility of not addressing the problem in an effective manner
+      was high.
+   5. Also, as data was almost neglected, data security was eaily compromised.
+   6. Using classes solves this problem by modelling program as a real world scenario.
+
+               PROCEDURAL ORIENTED PROGRAMMING
+    * Consists of writing as set of instuctions for the computer to follow.
+    * Main focus is on functions and not on flow of data.          
+    * Functions can either use local or global data.
+    * Data moves openly from function to function.
+
+               OBJECT ORIENTED PROGRAMMING
+    * Works on the concept of classes and objects.
+    * A class is a template to create objects.
+    * Treats data as a critical elements.
+    * Decomposes the problem in objects and builds data functions around 
+      the objects.
+
+
+               BASIC CONCEPTS IN OBJECT ORIENTED PROGRAMMING
+    * Classes - Basic template for creating objects.
+    * Objects - Basic run time entities.
+    * Data Abstraction & Encapsulation - Wrapping data and functions into 
+      single unit.
+    * Inheritance - Properties of one class can be inherited into others.
+    * Polymorphism - ability to take more than one forms.
+    * Dynamic Binding - code wich will execute is not known until the 
+      program runs.
+    * Message Passing - Object.message(Information) call format.                           
+
+            BENEFITS OF OBJECT ORIENTED PROGRAMMING
+
+   * Better code reusability using objects and inheritance.
+   * Principle of data hiding helps build secure systems.
+   * Multiple objects can co-exist without any inheritance.
+   * Software complexity can be easily managed.
+            
+
+                     INHERITANCE
+   OVERVIEW
+   * Reusability is a very important feature of OOPs.
+   * In C++, we can reuse a class and add additional features to it.
+   * Reusing classes saves time and money.
+   * Reusing already tested and debugged class will save a lot of effort
+     of developing and debugging the same thing again.
+
+      DRY --> Don't repeat yourself (a rule in programming)
+
+    WHAT IS INHERITANCE IN C++
+    * The concept of Reusability in C++ is supported using inheritance.
+    * We can reuse the properties of an existing class by inheriting from it.
+    * The existing class is calles as the BASE CLASS.
+    * The new class which inherited is called as the DERIVED CLASS.
+    * Reusing classes saves time and money.
+    * There are different types of inheritance in C++.
+
+    FORMS OF INHERITANCE IN C++
+    * Single inheritance
+    * Multiple inheritance
+    * Hierarchical inheritance
+    * Multilevel inheritance
+    * Hybrid inheritance
+
+    SINGLE INHERITANCE
+    * A derived class with only one base class.
+
+    MULTIPLE INHERITANCE
+    * A  derived class with more than one base class.
+
+    HIERARCHICAL INHERITANCE
+    * Several derived classes from a single base class.
+
+    MULTILEVEL INHERITANCE
+    *  Deriving a class from already derived class.
+
+    HYBRID INHERITANCE
+    *  Hybrid inheritance is a combination of multiple inheritance and 
+       multilevel inheritance.
+    *  A class is derived from two classes as in multiple inheritance.
+    *  However, one of the paent classes is not a base class.   
+
+
+            CONSTRUCTORS IN DERIVED CLASS
+   * We can use constructors in derived classes in C++.
+   * If base class constructor does not have any arguments, there is no need of
+     any constuctor in derived class.
+   * But if there are one or more arguments in the base class constructor,
+     derived class need to pass arguments to the base class constructor.
+   * If both base and derived classes have constructors, base class constructor
+     is executed first.
+
+            CONSTRUCTORS IN MULTIPLE INHERITANCE
+   * In multiple inheritance, base classes are constructed in the order in which
+     they appeasr in the class declaration.
+   * In multilevel inheritance, the constructors are executed in the order of 
+     inheritance.
+
+            SPECIAL SYNTAX
+   * C++ supports an special syntax for passing argumets to multiple base classes
+   * The  constuctor of the derived class receives all the arguments at once and 
+     then will pass the calls to the respective base classes.
+   * The body is called after all the constructors are finished executing.
+
+   Derived-Constructor(arg1,arg2,arg3,.....):Base-Constructor(arg1,,arg2),Base2-
+   Constuctor(arg3,arg4){
+
+   }Base-Constructor(arg1,arg2)
+
+         SPECIAL CASE OF VIRRTUAL BASE CLASS
+
+   * The constructors for virtual base classes are invoked before an nonvirtual
+     base class.
+   * If there are multiple virtual base classes, they are invoked in the order
+     declared.
+   * Any non-virtual base class are then constructed before the derived class
+     constructor is executed.
+
+
+            POLYMORPHISM
+   * There are two types of polymorphism
+      1. Compile time polymorphism
+      2. Run time polymorphism  ---> Virtual functions
+   
+                                    COMPILE TIME POLYMORPHISM
+                                    * Function overloading
+                                    * Operator overloading
+   
+                  
+                 C++ TEMPLATE
+
+* Template are called parameterised classes
+
+* Why use templets?
+-> Because I follow the principle DON'T REPEAT YOURSLEF(DRY)
+-> Generic progamming -> It is not specified to a specific data type.
+
+      SYNTAX FOR TEMPLATES    
+template<class t>                       |  // T --> it can be int,float, char, etc.
+class vector{                           |  
+  T*arr;                                |        
+  public:                               |
+    vector(T*arr){                      |
+      //code                            |
+    }                                   |----> REPRESENT MANY CLASSES
+    //& many other methods              |
+}                                       |
+                                        |
+int main(){                             |        
+  ->vector<int>myvec(ptr);              |
+  ->vector<float>myfvec(ptr1);          |
+}                                       |
+
+-->STL --> standard template library(generic classes and functions)
+* Why use STL?
+-> Reuse: Well tested components
+-> Time saving!
+Components of STL-> 1. container -> stores data... for example-> vector (array is not container)
+                        ->Containers are already implemented class which can be used using library
+                        ->Stores data and uses template classes
+                    2. Algorithm --> set of procedures which we can do using manipulating to arrive 
+                                      at a result.
+                        -> Use template functions.
+                    3. Iterators -> object poins to an element in a container
+                                 -> Handled just like pointers
+                                 -> Connects algorithm with containers
+        
+        STL -> It is used because its a good idea not to reinvent the wheel.
+
+        containers --> Object which stores data
+        Algorithm --> Procedure to process data
+        Iterators --> Object which points to an element of a container
+
+        Container
+        |->Sequence containers -> Linear fashion, example -vector, queue, deque
+        |->Associate containers -> Direct access, example - set, multiset, map, multimap
+        |->Derived containers ->  Real world modelling, example - stack, queue, priority-queue
+
+        WHEN TO USE WHICH?
+        * Vector -> Random access = Fast
+                 -> Middle Insertion/Deletion = slow
+                 -> Insertion at the end = fast
+        * List -> Random Acess = slow
+               -> M insertion = Fast
+               -> Insertion at the end = Fast
+        Associative containers--> All operations fast except random access
+        Derived containers --> Depends -> Data structure
+
+
+                      SIGNED AND UNSIGNED INTEGER
+
+        Signed int can represent negative values, and unsigned int can only represent non-negative integer values.
+
+For every value which is greater than INT_MAX and less than INT_MIN we can encounter discontinuity i.e, we can get unexpected results, if we use a signed integer. But for unsigned integer types discontinuity will only be a very large value than INT_MAX and a very less value than INT_MIN.
+
+BITWISE OPERATION 
+* A bitwise XOR operation on the two boolean expressions. The result will be true (1) if the signs are different (one is negative and the other is positive), and false (0) if the signs are the same (both negative or both positive)
+
+
+WORKING CONDITION OF TERNARY OPERATOR IN C++ :
+
+SYNTAX --> variable = (condition) ? Expression2 : Expression3;
+
+
+* Step 1: Expression1 is the condition to be evaluated.
+* Step 2A: If the condition(Expression1) is True then Expression2 will be executed.
+* Step 2B: If the condition(Expression1) is false then Expression3 will be executed.
+* Step 3: Results will be returned.
